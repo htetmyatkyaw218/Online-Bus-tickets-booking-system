@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+/*  import google fonts */
+
+.mid_bar{
+  background: #dfe9f5;
+}
+
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  
+}
+.main-skills{
+	heght:auto;
+  display: flex;
+  font-family: sans-serif;
+  color: #343a40;
+  line-height: 1;
+  justify-content: center;
+}
+
+.main-skills table{
+  width: 100%;
+  border-collapse: collapse;
+  margin:20px;
+  
+}
+.main-skills th,td{
+  padding: 10px;
+  text-align: left;
+  border-bottom:1px dashed;
+}
+.main-skills thead th{
+  background-color: #33AFFF;
+  color: white;
+}
+.main-skills tbody tr:nth-child(odd){
+  background-color: #f8f9fa;
+}
+.main-skills tbody tr:nth-child(even){
+  background-color: #e9ecef;
+}

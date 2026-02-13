@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+   
+}
+body{
+    background-color:white;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.payment-form {
+  text-align: center;
+  padding: 20px;
+   background-color: white;
+   width: 600px;
+}
+
+/* Style form elements */
+form {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+   background-color: rgb(255,215,0);
+}
+
+/* Balance the logo and text */
+.logo-container {
+  position: absolute;
+ top: -48px;
+  right: -20px; /* Adjust this value to move the logo slightly to the right */
+  margin: 10px;
+}
+
+.logo {
+  max-width: 140px;
+}
+#make-payment:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* ... Rest of your CSS ... */
