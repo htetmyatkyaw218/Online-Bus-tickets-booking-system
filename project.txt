@@ -1,0 +1,100 @@
+create database project;
+create table route( route_id int(20) auto_increment ,source varchar(50),destination varchar(50),Date varchar(100),depart varchar(100), arrive varchar(100),
+price varchar(100),Duration varchar(50),img varchar(100),time varchar(100),primary key(route_id));
+
+ update route set price='8,000' where route_id='3';
+update route set destination='Yangon-Dagonayar(Yangon)' where price='MMk 13,000';
+update route set destination='Pathein' where route_id='2';
+
+
+insert into route values(1,'Pathein','Yangon-Dagonayar(Yangon)','2023-08-21','Aug 21, 6:30 AM','Aug 21, 10:30 AM','MMk 13,000','4 Hours','img/s3.jpg',' 6:30 AM-VIP');
+insert into route values(2,'Pathein','Yangon-Dagonayar(Yangon)','2023-08-22','Aug 22, 6:30 AM','Aug 23, 10:30 AM','MMk 13,000','4 Hours','img/s2.jpg',' 6:30 AM-VIP');
+insert into route values(3,'Pathein','Yangon-Dagonayar(Yangon)','2023-08-23','Aug 23, 6:30 AM','Aug 23, 10:30 AM','MMk 13,000','4 Hours','img/s6.jpg',' 6:30 AM-VIP');
+insert into route values(4,'Yangon-Dagonayar(Yangon)','Pathein','2023-08-21','Aug 21, 6:00 AM','Aug 21, 10:00 AM','MMk 13,000','4 Hours','img/s9.jpg', '6:00 AM-VIP');
+insert into route values(5,'Pathein','Laputta','2023-08-21','Aug 21, 2:30 AM','Aug 21, 5:30 AM','MMk 8,000','3 Hours','img/s5.jpg',' 2:30 AM-VIP');
+insert into route values(6,'Laputta','Pathein','2023-08-21','Aug 21, 8:30 AM','Aug 21, 11:30 AM','MMk 8,000','3 Hours','img/s1.jpg','8:30 AM-VIP');
+insert into route values(7,'Pathein','Mandalay','2023-08-21','Aug 21, 5:30 AM','Aug 21, 4:30 PM','MMk 35,000','11 Hours','img/s4.jpg',' 5:30 AM-VIP');
+insert into route values(8,'Mandalay','Pathein','2023-08-21','Aug 21, 6:00 AM','Aug 21, 5:00 PM','MMk 35,000','11 Hours','img/s1.jpg', '6:00 AM-VIP');
+insert into route values(9,'Pathein','ChaungThar','2023-08-21','Aug 21, 6:30 AM','Aug 21, 8:00 AM','MMk 10,000','1:30 Hours','img/s17.jpg',' 6:30 AM-VIP');
+insert into route values(10,'ChaungThar','Pathein','2023-08-21','Aug 21, 5:00 PM','Aug 21, 6:30 PM','MMk 10,000','1:30 Hours','img/s17.jpg',' 5:00 AM-VIP');
+insert into route values(11,'Pathein','HinThada','2023-08-21','Aug 21, 7:00 AM','Aug 21, 10:00 AM','MMk 10,000','3 Hours','img/s8.jpg',' 7:00 AM-VIP');
+insert into route values(12,'HinThada','Pathein','2023-08-21','Aug 21, 2:00 PM','Aug 21, 5:00 PM','MMk 10,000','3 Hours','img/s9.jpg',' 2:00 PM-VIP');
+
+create table information(id int auto_increment,seat varchar(10), Name varchar(200),gender varchar(20),nrc varchar(100), Phone varchar(20), email varchar(200), request varchar(500),source varchar(50),destination varchar(50),Date varchar(100),primary
+key( id));
+
+insert into information values ('2','1','Htet Myat Kyaw','male','14/LPT(N)222222','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-16');
+insert into information values ('2','Kyaw Thet Hmue','male','11/TT(N)111111','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-15');
+insert into information values ('3','Ye Min Aung','male','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-15');
+insert into information values ('4','Oak Kar Kyaw','male','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-15');
+insert into information values ('5','Min  Thein ','male','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-15');
+insert into information values ('6','Kaung Htet Swe','male','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-15');
+insert into information values ('7','Yoon Yati ','Female','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','Yangon-Dagonayar(Yangon)','2023-09-15');
+insert into information values ('','Htet Myat Kyaw','male','14/lapdijhe122','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','laputta','2023-09-21');
+insert into information values ('','Htet Myat Kyaw','male','14/lapdijhe122','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','laputta','2023-09-21');
+insert into information values ('10','Htet Myat Kyaw','male','14/lapdijhe122','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','ChaungThar','2023-09-21');
+insert into information values ('8','Htet Myat Kyaw','male','14/LPT(N)222222','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','laputta','2023-09-15');
+insert into information values ('9','Kyaw Thet Hmue','male','11/TT(N)111111','09751003002','khtet@gmail.com','bar ma m shi buu','Pathein','laputta','2023-09-15');
+insert into information values ('10','Ye Min Aung','male','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Yangon-Dagonayar(Yangon)','Pathein','2023-09-15');
+insert into information values ('11','Oak Kar Kyaw','male','12/THAKATA(N)333333','09751003002','khtet@gmail.com','bar ma m shi buu','Yangon-Dagonayar(Yangon)','Pathein','2023-09-15');
+insert into information values ('3','3','Htet Myat Kyaw','male','14/LPT(N)222222','09751003002','khtet@gmail.com','bar ma m shi buu','Yangon-Dagonayar(Yangon)','Pathein','2023-09-15');
+
+
+create table admin(admin_id int auto_increment,name varchar(50),email varchar(100),gender varchar(50),phone varchar(20),password varchar(100),primary key(admin_id));
+insert into admin values('1','Htet Myat Kyaw','htet123@gmail.com','Male','09764566900','htet123');
+insert into admin values('2','Kaung htet Swe','kaung123@gmail.com','Male','09764566900','kaung123');
+insert into admin values('3','Kyaw Thet Hmue','kyaw123@gmail.com','Male','09764566900','kyaw123');
+insert into admin values('4','Ye Min Aung','yeye123@gmail.com','Male','09764566900','yeye123');
+insert into admin values('5','Oak Kar Kyaw','oak123@gmail.com','Male','09764566900','oak123');
+insert into admin values('6','Min Thein','min123@gmail.com','Male','09764566900','min123');
+insert into admin values('7','Yoon Yati','yoon123@gmail.com','Female','09764566900','yoon123');
+
+ select * from route, information where route.source=information.source and route.destination=information.destination and route.date=information.date;
+
+
+mysql> select price from route,information where route.source=information.source and route.destination=information.destination and route.Date=information.Date;
+
+
+<%try{
+	Class.forName("com.mysql.jdbc.Driver");
+			}
+			catch(ClassNotFoundException e){
+				e.printStackTrace();
+			}
+      int coun=0;
+		String from1=request.getParameter("from");
+		String to1=request.getParameter("to");
+		String Date1=request.getParameter("date");
+		
+		String add="select price from route,information where route.source like'%"+from1+"%'=information.source like'%"+from1+"%' and route.destination like '%"+to1+"%'=information.destination like '%"+to1+"%' and route.Date like'%"+Date1+"%'=information.Date like'%"+Date1+"%'" ;
+			Connection conn2; 
+			try{
+				conn2=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","root");
+				Statement st=conn2.createStatement();
+				ResultSet rs1=st.executeQuery(add);
+				int total=0;
+				while(rs1.next()){
+					total+=rs1.getInt(1);
+				}
+				
+				%>
+		<div class="member">
+         <div class="box-info">
+            <div class="icon">
+          <h2><i class="fa-solid fa-hand-holding-dollar"></i></h2>
+          </div>
+          <div class="text">
+            <p>MMK <%=total %></p>
+            <p>Total Revenue</p>
+          </div>
+       
+        </div>
+       </div>
+		 
+		  <%  
+			
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		%>
